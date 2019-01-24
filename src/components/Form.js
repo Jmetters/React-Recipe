@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Form = props => (
-<div>
+<div className="Search">
 <form onSubmit={props.getRecipe} style={{ marginBottom:"2rem"}}>
 <input type="text" name="recipeName" >
 

@@ -1,6 +1,7 @@
 
 body{
   background: #fff;
+  font-family: sans-serif;
 }
 
 .wrapper{
@@ -14,24 +15,29 @@ body{
 
   background-repeat: no-repeat;
   height: 200px;
-background: url('https://www.socialclub.cam.ac.uk/images/group-people-eating-pizza-883x431-px.jpg/image');
-background-position: center;
- background-image: #f06d06;
-    
+background: url('https://www.socialclub.cam.ac.uk/images/group-people-eating-pizza-883x431-px.jpg/image' ) center;
+background-repeat: no-repeat;
+ background-size: cover;
 
 }
 
-.knockout_text{
-  font: bold 5rem sans-serif;
-  text-align: center;
-  color:000;
-background: url('http://www.abchome.com/wp-content/uploads/2016/07/abckitchen-food2.jpg') center;
-background-clip: text;
-color:transparent;
-  text-align: center;
 
-  }
 
 .color_blank{
 	color:#fff;
 }
+
+
+.knockout_text{
+  font: bold 8rem sans-serif;
+  text-align: center;
+    color: black;
+    mix-blend-mode: screen;
+    background-color: rgb(90, 112, 129);
+    height: 200px;
+}
+
+.search, form {
+	text-align: center;
+	margin-top: 5rem;
+	}
