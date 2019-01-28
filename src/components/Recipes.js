@@ -1,19 +1,38 @@
 import React from 'react';
 
-const Recipes = props => (
+import { Link } from "react-router-dom";
 
-<div>
+const Recipes = props => (
+	<div className="container">
+	<div className="row">
+
 { props.recipes.map((recipe) => {
 
   return (
+  	<div key={recipe.title} className="col-md-4" style={{marginBottom:"2rem"}}>
+  	<div className="recipe_cards">
+  	<img 
+  	src={recipe.image_url} 
+  	alt={recipe.title} />
+  	<div className="recipe_text">
+  	<h5 className="recipes_title">
+  	{recipe.title.length < 20 ? `${recipe.title}` : `${recipe.title.substring(0, 25)}..`}
+  	</h5>
+  	<p className="recipes_subtitle">Chef:<span> {recipe.publisher} </span></p>
+  	</div>
+   <button className="button_styling">
+   <Link to={{ pathnmame: `/recipe/${recipe.recipe_id}`,
+   state: {recipe: recipe.title }
 
-<div key={recipe.id} >
-    
-    <p>{recipe.title}</p>
-    <img src={recipe.image_url} alt={recipe.title} />
+
+}}>View recipe
+   </Link > 
+   </button>
+    </div>
     </div>
     );
 } )}
+</div>
 </div>
 
 	);
