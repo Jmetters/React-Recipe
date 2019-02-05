@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
+
+
 const Recipes = props => (
 	<div className="container">
 	<div className="row">
@@ -20,14 +22,18 @@ const Recipes = props => (
   	</h5>
   	<p className="recipes_subtitle">Chef:<span> {recipe.publisher} </span></p>
   	</div>
+
    <button className="button_styling">
-   <Link to={{ pathnmame: `/recipe/${recipe.recipe_id}`,
-   state: {recipe: recipe.title }
+   <Link to={{ 
+    pathname: `/Recipe/${recipe.recipe_id}`,
 
+    state: {recipe: recipe.title}
 
-}}>View recipe
+  }}>
+View recipe
    </Link > 
    </button>
+   
     </div>
     </div>
     );

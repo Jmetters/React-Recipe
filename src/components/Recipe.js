@@ -3,35 +3,38 @@ import React from 'react';
 
 const api_key ="74c127ede31f802cc42b40cef9d46c3f";
 
-class Recipe extends React.Component{
 
-	state= {
+class Recipe extends React.Component {
+
+	state = {
 		activeRecipe: []
 	}
 
-	componentDidMount = () =>{
+	componentDidMount = async () => {
+		
+    
+    const title = this.props.location.state.recipe;
 
-const title = this.props.loation.state.recipe;
-
-    const req= await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${api_key}&q=${title}&count=10`);
+    const req = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${api_key}&q=${title}`);
 
    const res = await req.json();
     
-    this.setState({activeRecipe: res.recipes[0] })
-    console.log(this.state.activeRecipe);
-
-	}
-render(){
-console.log("works");
-return(
-<div class="container">
-
-</div>
-
-	);
-
+this.setState({ activeRecipe: res.recipes[0] });
+	console.log(this.state.activeRecipe);
 }
 
+render() {
+const recipe= this.state.activeRecipe;
+	return(
+
+	<div className="container">
+	<div className="active-recipe">
+	<img className="active-recipe-image" src={recipe.image_url} alt={recipe.title} />
+
+	</div>
+	</div>
+	); 
+}
 
 }
 
