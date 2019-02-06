@@ -1,7 +1,6 @@
 
 body{
-  background: #fff;
-  font-family: sans-serif;
+ background: #fff;
 }
 
 .App {
@@ -12,6 +11,8 @@ img {
   width: 100%;
   height: 220px;
 }
+
+
 
 .wrapper{
   position:absolute;
@@ -26,29 +27,24 @@ img {
 }
 
 .backdrop{
-
-  background-repeat: no-repeat;
-  height: 200px;
-background: url('https://www.socialclub.cam.ac.uk/images/group-people-eating-pizza-883x431-px.jpg/image' ) center;
-background-repeat: no-repeat;
- background-size: cover;
-
-}
-
-
-
-.color_blank{
-	color:#fff;
+  background: linear-gradient(to right, #ECD099
+ , #C39D52);
 }
 
 
 .knockout_text{
-  font: bold 8rem sans-serif;
-  text-align: center;
-    color: black;
-    mix-blend-mode: screen;
-    background-color: rgb(90, 112, 129);
-    height: 200px;
+  
+    font: bolder 12vw 'Alfa Slab One';
+    text-align:  center;
+    margin:  0;
+    background: url("https://www.drinkpreneur.com/wp-content/uploads/2018/08/www.drinkpreneur.com-unfavorable-weather-conditions-continue-to-batter-food-production-blog-featured-healthy-foods-20180306.jpg") center;
+    background-size:  contain;
+    margin:  auto;
+    width:    75vw;
+    background-clip:   text;
+    -webkit-background-clip: text;
+    color: transparent;
+  
 }
 
 .form_input{
@@ -107,4 +103,49 @@ color: #e74c3c;
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 1px;
+}
+
+.active-recipe{
+    background: #fff;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+  text-align: left;
+  overflow: hidden;
+}
+
+.active-title{
+color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0;
+  text-align: center;
+}
+
+.active-website{
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0;
+  text-align: center;
+
+}
+
+.recipe-active-button{
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+
+}
+
+.active-recipe-image{
+width: 500px;
+  height: 220px;
+
 }
