@@ -4,6 +4,8 @@ import Form from "./components/Form";
 import './App.css';
 import Recipes from "./components/Recipes";
 import Header from "./components/Header";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const api_key ="74c127ede31f802cc42b40cef9d46c3f";
@@ -18,7 +20,7 @@ class App extends Component {
     const recipeName = e.target.elements.recipeName.value;
     e.preventDefault();
 
-    const api_call = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${api_key}&q=${recipeName}&count=9`);
+    const api_call = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${api_key}&q=${recipeName}&count=3`);
 
    const data = await api_call.json();
     

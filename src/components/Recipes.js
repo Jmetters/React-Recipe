@@ -10,6 +10,8 @@ const Recipes = props => (
 
 { props.recipes.map((recipe) => {
 
+
+
   return (
   	<div key={recipe.title} className="col-md-4 home_page" style={{marginBottom:"2rem"}}>
   	<div className="recipe_cards">
