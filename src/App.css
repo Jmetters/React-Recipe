@@ -25,7 +25,6 @@ a{
 }
 
 
-
 .wrapper{
   position:absolute;
   left: 50%;
@@ -146,33 +145,46 @@ color: #e74c3c;
 {/*active styling */}  
  
 
-.active-recipe{
-    background: #fff;
-  padding-bottom: 2rem;
+.active-recipe {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.active-recipe-image{
+  height: 500px !important;
   border-radius: 5px;
-  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
-  text-align: left;
-  overflow: hidden;
+  margin-top:2rem;
+   box-shadow: -4px 4px 34px -8px rgba(0,0,0,0.75);
 }
 
-.active-title{
-color: #e74c3c;
+.active-recipe-title {
   text-transform: uppercase;
-  font-size: 1.1rem;
-  padding: 1.8rem 0 0.2rem 0;
-  text-align: center;
+  letter-spacing: 2px;
+  margin: 1rem 0;
 }
 
-.active-website{
+.active-recipe__publisher, .active-recipe__website {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.active-recipe__publisher span {
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+
+.active-recipe__website span {
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 2px;
   color: #e74c3c;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  padding: 1.8rem 0 0.2rem 0;
-  text-align: center;
-
+  margin-left: 10px;
 }
 
-.recipe-active-button{
+.active-recipe-button {
   border: solid 2px #e74c3c;
   background: transparent;
   padding: 0.2rem 0.9rem;
@@ -181,15 +193,8 @@ color: #e74c3c;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
-  margin-left: 0.7rem;
-
 }
 
-.active-recipe-image{
-width: 500px;
-  height: 220px;
-
-}
 
 {/* psuedo and animations */}
 
@@ -212,9 +217,9 @@ a:hover{
 
 .recipe_cards:hover{
 background: #fff;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   border-radius: 5px;
-  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
-  text-align: center;
+  box-shadow: -4px 4px 34px -8px rgba(0,0,0,0.75);
   overflow: hidden;
 }
+
