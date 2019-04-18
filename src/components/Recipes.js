@@ -15,8 +15,8 @@ const Recipes = props => (
   return (
   	<div key={recipe.title} className="col-md-4 home_page" style={{marginBottom:"2rem"}}>
   	<div className="recipe_cards">
-  	<img 
-  	src={recipe.image_url} 
+  	<img
+  	src={recipe.image_url}
   	alt={recipe.title} />
   	<div className="recipe_text">
   	<h5 className="recipes_title">
@@ -26,16 +26,16 @@ const Recipes = props => (
   	</div>
 
    <button className="button_styling">
-   <Link to={{ 
+   <Link to={{
     pathname: `/Recipe/${recipe.recipe_id}`,
 
     state: {recipe: recipe.title}
 
   }}>
 View recipe
-   </Link > 
+   </Link >
    </button>
-   
+
     </div>
     </div>
     );

@@ -202,7 +202,7 @@ color: #e74c3c;
 
 .button_styling:hover::before {
     display: inline-block;
-    content:"";
+    content:" ";
     font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2e7";
 }
 
